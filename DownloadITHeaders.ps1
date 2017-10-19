@@ -6,15 +6,15 @@ Import-Module C:\utils-sa\scripts\Out-DataTable.ps1
 
 #Variables for downloading 
 $password=Get-SecureValue -VaultGroup "HR Feed" -ValueName "HR Feed" -VaultCredentials (Get-Content c:\utils-sa\vault_creds.txt)
-$sshhostkeyfingerprint="ssh-rsa 2048 7a:0e:37:10:c8:32:49:20:ae:c1:92:3a:35:c1:d5:1b"
+$sshhostkeyfingerprint="ssh-rsa 2048 "
 $destination="C:\utils-sa\data\rcoithdr.txt"
 $source="/rcoithdr.txt"
-$server="sdfiltran.adp.com"
-$port=10022
-$username = "ly1_ithrds"
+$server=""
+$port=
+$username = ""
 
 #Variables for the database
-$dataSource = "va01-sql07.corp.yp.com"
+$dataSource = ""
 $database = "HR"
 $table = "dbo.[Stg_rcoithdr]"
 $sp = "dbo.[nsp_LoadHRData]"

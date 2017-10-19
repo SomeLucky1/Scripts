@@ -1,4 +1,6 @@
-﻿Import-Module HPAM
+﻿#Module for creating offboarding tickets in Jira via REST API.
+
+Import-Module HPAM
 Import-Module Vault
 
 #Set the initial global variables and Jira account used

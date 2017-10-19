@@ -1,6 +1,8 @@
 ﻿Import-Module ActiveDirectory
 Import-Module Jira
 
+# Audit accounts that need to be offboarded or provisioned resources.
+
 Function Get-Temppassword() {
 #Generates a random password
 	Param(

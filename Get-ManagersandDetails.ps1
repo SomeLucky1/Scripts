@@ -1,4 +1,6 @@
-﻿Workflow Get-Managers {
+﻿#Generate a list of all users with direct reports.  Count all direct reports recursively and determine how many levels from the CEO.
+
+Workflow Get-Managers {
     function Get-ManagerDetails ($managerdetails) {
     function Get-ADDirectReports
 {
